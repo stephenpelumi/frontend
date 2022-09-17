@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <link rel="stylesheet" href="./css/index.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    <section>
+      <menu id="menu">
+           <li id="mobilefeature" onclick="mobilefeature()" >Features <img id="ArrowDown" src="./images/icon-arrow-down.svg" alt=""><img id="ArrowUp" src="./images/icon-arrow-up.svg">
+            <article>
+              <section id="MobileFeatureContent">
+                <div class="todotwo">
+                  <img class="img" src="./images/icon-todo.svg" alt=""> 
+                  Todo List
+                </div>
+                <div class="calendartwo">
+                  <img class="img" src="./images/icon-calendar.svg" alt="">
+                  Calendar
+                </div>
+                <div class="remindertwo">
+                  <img class="img" src="./images/icon-reminders.svg" alt="">
+                  Reminder
+                </div>
+                <div class="planningtwo">
+                  <img class="img" src="./images/icon-planning.svg" alt="">
+                  Planning
+                </div>
+              </section>
+            </article></li>
+            <li onmouseover="mobilecompany()" id="mobilecompany">Company <img id="SecondArrowDown" src="./images/icon-arrow-down.svg" alt=""><img id="SecondArrowUp" src="./images/icon-arrow-up.svg">
+              <article>
+                <section id="MobileCompanyContent">
+                  <div>
+                    History
+                  </div>
+                    Our Team
+                  </div>
+                  <div>
+                    Blog
+                  </div>
+                </section>
+              </article></li>
+            <li>Careers</li>
+            <li>About</li>
+          <div class="menubottom">
+            <li>Login</li>
+            <button class="register">Register</button>
+          </div>
+      </menu>
+    </section>
+    <section class="logo">
+    <div>
+      <img class="header" src="./images/logo.svg" alt="">
+    </div>
+    <div class="toggle">
+      <i class="fa fa-bars"></i>
+    </div>
+  </section>
+    <nav>
+      <ul class="topleft">
+        <li id="totalfeature" onmouseout="Featuresout()" onmouseover="Features()">Features <img id="firstdown"  src="./images/icon-arrow-down.svg" alt=""><img id="firstup" src="./images/icon-arrow-up.svg">
+          <article>
+            <section id="features" class="features">
+              <div class="todo">
+                <img src="./images/icon-todo.svg" alt=""> 
+                Todo List
+              </div>
+              <div class="calendar">
+                <img src="./images/icon-calendar.svg" alt="">
+                Calendar
+              </div>
+              <div class="reminder">
+                <img src="./images/icon-reminders.svg" alt="">
+                Reminder
+              </div>
+              <div class="planning">
+                <img src="./images/icon-planning.svg" alt="">
+                Planning
+              </div>
+            </section>
+          </article></li>
+        <li id="totalcompany" onmouseout="companyout()" onmouseover="company()">Company <img id="seconddown" src="./images/icon-arrow-down.svg" alt=""><img id="secondup" src="./images/icon-arrow-up.svg">
+          <article>
+            <section id="company" class="company">
+              <div>
+                History
+              </div>
+                Our Team
+              </div>
+              <div>
+                Blog
+              </div>
+            </section>
+          </article></li>
+        <li>Careers</li>
+        <li>About</li>
+      </ul>
+    </nav>
+      <ul class="topright">
+        <li>Login</li>
+        <button class="register">Register</button>
+      </ul>
+  </header>
+
+
+  <main class="main">
+    <div>
+      <img class="heroMobile" src="./images/image-hero-mobile.png" alt="">
+    </div>
+    <section class="totalcontent">
+        <h1 class="make">
+          Make<br class="break"> remote work
+        </h1>
+      <div class="content">
+        Get your team in sync, no matter your location.<br class="break"> Streamline processes, 
+        create team rituals, and<br class="break">  watch productivity soar.
+      </div>
+      <button class="learn">
+        Learn more
+      </button>
+      <div class="lowerimg">
+        <img class="footerimg" src="./images/client-databiz.svg" alt="" height="25px">
+        <img class="footerimg" src="./images/client-audiophile.svg" alt="" height="25px">
+        <img class="footerimg" src="./images/client-meet.svg" alt="" height="25px">
+        <img class="footerimg" src="./images/client-maker.svg" alt="" height="25px">
+      </div>
+    </section>
+    <section>
+      <aside>
+        <img class="hero" src="./images/image-hero-desktop.png" alt="" width="460px">
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.linkedin.com/in/pelumi-ajuwon/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BwH9tZbwTRF6b3GHvhYX8Cg%3D%3D">Ajuwon Pelumi</a>.
+    </div>
+  </footer>
+
+  
+  <script src="js/index.js"></script>
+</body>
+</html>

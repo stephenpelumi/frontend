@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
+
+body{
+ margin-right: 100px;
+ font-family: 'Epilogue', sans-serif;
+}
+main{
+ display: flex;
+}
+ul{
+ display: flex;
+ gap: 20px;
+ list-style: none;
+ color: rgb(114, 113, 113);
+}
+li:hover{
+ color: black;
+}
+nav{
+ display: flex;
+ margin-left: 25px;
+}
+header{
+ display: flex;
+ padding-top: 10px;
+}
+.header{
+ padding-top: 15px;
+ padding-left: 50px;
+}
+.make{
+ font-size: 5rem;
+ margin-top: 105px;
+ margin-left: auto;
+ font-family: 'Epilogue', sans-serif;
+ font-weight: 700px;
+}
+.hero{
+ margin-left: auto;
+}
+.main{
+ display: flex;
+ justify-content: center;
+ gap: 200px;
+ margin-top: 50px;
+ margin-left: -150px;
+}
+.topleft{
+ display: flex;
+ gap: 60px;
+}
+.topright{
+ display: flex;
+ margin-left: auto;
+ gap: 40px;
+}
+.lowerimg{
+ margin-top: 80px;
+ display: flex;
+ gap: 20px;
+}
+.learn{
+ color: white;
+ background-color: black;
+ width: 125px;
+ font-weight: bolder;
+ font-size: 16px;
+ margin-top: 50px;
+ height: 40px;
+ border-radius: 10px;
+}
+.learn:hover{
+ color: black;
+ background-color: white;
+}
+.content{
+ line-height: 25px;
+ color: rgb(132, 130, 130);
+}
+.register{
+ border-radius: 10px;
+ border-color: rgb(179, 175, 175);
+ width: 100px;
+ height: 35px;
+ background-color: white;
+ margin-top: -10px;
+ cursor: pointer;
+}
+.register:hover{
+ border-color: black;
+}
+.attribution { font-size: 11px; text-align: center; margin-top: 60px; }
+.attribution a { color: hsl(228, 45%, 44%); }
+#firstup{
+ display: none;
+ margin-top: 5px;
+ height: 8px;
+}
+#firstdown{
+ margin-top: 5px;
+ height: 8px;
+}
+#seconddown{
+ margin-top: 5px;
+ height: 8px;
+}
+#secondup{
+ display: none;
+ margin-top: 5px;
+ height: 8px;
+}
+.todo, .calendar, .reminder, .planning{
+ display: flex;
+ gap: 15px;
+}
+.features{
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+ box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.192);
+ padding: 30px;
+ border-radius: 10px;
+ margin-top: 30px;
+ margin-left: -150px;
+ position: absolute;
+ display: none;
+}
+.company{
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+ box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.207);
+ padding: 25px;
+ border-radius: 10px;
+ margin-left: -150px;
+ margin-top: 30px;
+ position: absolute;
+ display: none;
+}
+.heroMobile{
+ display: none;
+}
+.toggle{
+ display: none;
+}
+menu{
+ display:flex;
+ flex-direction: column;
+ gap: 30px;
+ display: none;
+}
+li{
+ list-style: none;
+ cursor: pointer;
+}
+.menubottom{
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ text-align: center;
+}
+@media screen and (max-width:370px) {
+
+ .heroMobile{
+  display: block;
+  width: 100%;
+  margin-top: -2%;
+  margin-inline-start: 21%;
+ }
+ .header{
+  padding-inline-start: 10%;
+  padding-top: 20px;
+  width: 150px;
+ }
+ .hero{
+  display: none;
+ }
+ .topleft{
+  display: none;
+ }
+ .topright{
+  display: none;
+ }
+ .main{
+  display: grid;
+  margin-left: 0px;
+ }
+ .totalcontent{
+  text-align: center;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+ .make{
+  font-size: 54px;
+  margin-top: -20%;
+  margin-left: 190px;
+  /* width: 100%; */
+  inline-size: 500px;
+ }
+ .content{
+  margin-left: 25.5%;
+  margin-top: -10px;
+  width: 95%;
+  font-size: 28px;
+  line-height: 40px;
+ }
+ .break{
+  display: none;
+ }
+ .learn{
+  margin-left: 20rem;
+  margin-top: 10%;
+  width: 240px;
+  height: 80px;
+  border-radius: 25px;
+  font-size: 28px;
+ }
+ .lowerimg{
+  margin: auto;
+  margin-left: 25%;
+  margin-top: 15%;
+ }
+ .footerimg{
+  height: 34px;
+ }
+ .toggle{
+  display: block;
+  font-size: 45px;
+  font-weight: lighter;
+  padding-top: 20px;
+  float:right;
+  margin-left: 30%;
+  margin-left: auto;
+  z-index: 999;
+ }
+ .fa-times{
+  margin-left: 85px;
+  font-size: 50px;
+  position: fixed;
+ }
+ .attribution{
+  margin-left: 2rem;
+  margin-top: -20%;
+  inline-size: 500px;
+  font-size: 25px;
+ }
+ .logo{
+  display: flex;
+  gap: 200%;
+ }
+ menu{
+  position: fixed;
+  margin-left: 33%;
+  background-color: white;
+  height: 200%;
+  width: 60%;
+  margin-top: -20px;
+  padding-top: 100px;
+  color: rgb(102, 102, 103);
+  font-size: 1.5rem;
+  line-height: 70px;
+  box-shadow: -200px 0px 500px rgb(0, 0, 0);
+ }
+ #ArrowUp, #SecondArrowUp{
+  display: none;
+  width: 20px;
+  margin-top: 30px;
+  margin-left: 20px;
+  height: 10px;
+ }
+ #ArrowDown, #SecondArrowDown{
+  width: 20px;
+  margin-top: 30px;
+  margin-left: 20px;
+  height: 10px;
+ }
+ #MobileCompanyContent{
+  display: none;
+  margin-top: 50px;
+  margin-left: -100px;
+  font-size: 25px;
+ }
+ .img{
+  width: 28px;
+  margin-top: 20px;
+  height: fit-content;
+ }
+ .todotwo, .calendartwo, .remindertwo, .planningtwo{
+  display: flex;
+  gap: 30px;
+ }
+ #MobileFeatureContent{
+  display: none;
+  margin-top: 50px;
+  margin-left: -100px;
+  font-size: 25px;
+ }
+ 
+ .register{
+  width: 85%;
+  height: 60px;
+  border-radius: 20px;
+  color:  rgb(102, 102, 103);
+  border-color: black;
+  font-size: 1.5rem;
+  margin-left: 4%;
+ }
+}
